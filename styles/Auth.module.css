@@ -1,0 +1,56 @@
+.container {
+    text-align: center;
+    width: 40%;
+    margin: 100px auto;
+    font-family: 'Roobert', sans-serif;
+}
+
+.fcontainer {
+    background: #f9f7f5;
+    border: 1px solid #efe9e5;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 50px;
+    padding: 50px 30px;
+    position: relative;
+}
+
+.pfield {
+    margin-top: 30px;
+}
+
+.forgotpassword {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.fcontainer label {
+    display: block;
+    color: #8d8985;
+    font-family: 'Roobert', sans-serif;
+}
+
+.fcontainer input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.fcontainer .btn {
+    background: #171716;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 30%;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #fdfcfc;
+    font-size: 18px;
+    font-family: 'Roobert', sans-serif;
+}
+
+.fcontainer .btn:hover {
+    background: #2f2e2c;
+}

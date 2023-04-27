@@ -1,0 +1,30 @@
+@import url('https://fonts.cdnfonts.com/css/roobert');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roobert', sans-serif;
+    background: ebe4de;
+    color: #171716;
+}
+
+a {
+    color: #8d8985;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+a:hover {
+    color: #2f2e2c;
+    transition: .3s ease-in-out;
+}
+
+::placeholder {
+    font-size: 16px;
+    font-weight: 200;
+    font-family: 'Roobert', sans-serif;
+}
