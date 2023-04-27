@@ -15,7 +15,7 @@ body {
 
 a {
     color: #8d8985;
-    text-decoration: none;
+    text-decoration: none !important;
     transition: .3s ease-in-out;
 }
 
@@ -41,6 +41,10 @@ nav {
     width: 100%;
 }
 
+nav h1 {
+    color: #171716;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -61,3 +65,4 @@ nav {
     border-radius: 5px;
     color: #e6e6e6 !important;
 }
+

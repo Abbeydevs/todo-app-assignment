@@ -1,0 +1,27 @@
+.task-container {
+    border: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    padding: 0 0px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.task-container input {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    font-weight: 200;
+    font-family: 'Roobert', sans-serif;
+}
+
+.add-icon {
+    font-size: 20px;
+    color: #454545;
+    cursor: pointer;
+    margin-right: 20px;
+}

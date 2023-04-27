@@ -1,51 +1,12 @@
 .task {
-  margin-top: 5rem;
+  margin-top: 7rem;
   padding: 30px 200px;
 }
 
 .task h1 {
-  font-weight: 500;
-  color: #999;
-}
-
-.task-container {
-  border: 1px solid #e6e6e6;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  border-radius: 10px;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.task-container input {
-  padding: 15px;
-  border: none;
-  width: 100%;
-  outline: none;
-  font-size: 16px;
-  font-weight: 200;
-  font-family: 'Roobert', sans-serif;
-}
-
-.add-icon {
-  font-size: 20px;
-  color: #999999;
-}
-
-.task-content {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.task-label {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: .6rem;
-  color: #666666;
+  font-weight: 400;
+  font-size: 35px;
+  color: #373737;
 }
 
 .divider {
@@ -53,19 +14,4 @@
   height: 1px;
   background: #e6e6e6;
   margin-top: 15px;
-}
-
-.action-icons {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.action-icons .del-icon, .check-icon {
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.del-icon {
-  color: #ff0000;
 }
