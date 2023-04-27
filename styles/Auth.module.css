@@ -24,6 +24,11 @@
     text-align: right;
 }
 
+.acctstatus {
+    margin-top: 20px;
+    text-align: left;
+}
+
 .fcontainer label {
     display: block;
     color: #8d8985;
@@ -42,9 +47,9 @@
     background: #171716;
     border: none;
     border-radius: 5px;
-    padding: 15px;
-    width: 30%;
-    margin-top: 20px;
+    padding: 15px 30px;
+    width: max-content;
+    margin-top: 30px;
     cursor: pointer;
     color: #fdfcfc;
     font-size: 18px;
@@ -53,4 +58,13 @@
 
 .fcontainer .btn:hover {
     background: #2f2e2c;
+}
+
+.errContainer {
+    background: #ffe6e6;
+    border: 1px solid #ff8080;
+    border-radius: 5px;
+    padding: 20px;
+    color: #ff8080;
+    margin-top: 20px;
 }

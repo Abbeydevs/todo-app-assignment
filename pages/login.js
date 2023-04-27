@@ -20,7 +20,7 @@ const Login = () => {
       setPswdErrorMsg(!pswdErrorMsg)
 
       setTimeout(() => {
-        setErrorMsg(false)
+        setPswdErrorMsg(false)
       }, 4000)
     } else {
       alert(`this is your email: ${email} and password ${password}`)
@@ -60,6 +60,11 @@ const Login = () => {
           <Link href='/forgotpass'>Forgot Password?</Link>
         </div>
         <button className={styles.btn}>Login</button>
+        <div className={styles.acctstatus}>
+          <p>
+            Don't have an account?<Link href='/register'> Create account</Link>
+          </p>
+        </div>
         {errorMsg && (
           <div className={styles.errContainer}>
             <p>Input cannot be empty</p>
