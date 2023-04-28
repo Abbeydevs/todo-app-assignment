@@ -1,7 +1,7 @@
 .container {
     text-align: center;
     width: 40%;
-    margin: 100px auto;
+    margin: 10px auto;
     font-family: 'Roobert', sans-serif;
 }
 
@@ -64,7 +64,8 @@
     background: #ffe6e6;
     border: 1px solid #ff8080;
     border-radius: 5px;
-    padding: 20px;
+    padding: 15px;
     color: #ff8080;
     margin-top: 20px;
+    text-align: center;
 }

@@ -13,6 +13,10 @@ body {
     color: #171716;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 a {
     color: #8d8985;
     text-decoration: none !important;
@@ -36,13 +40,16 @@ nav {
     align-items: center;
     padding: 20px 50px;
     background: #f9f7f5;
-    position: fixed;
-    top: 0;
     width: 100%;
 }
 
+.logo-text {
+    font-weight: 100;
+    color: #ffb3b3;
+}
+
 nav h1 {
-    color: #171716;
+    color: #707070;
 }
 
 .nav-links {

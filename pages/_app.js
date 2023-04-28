@@ -1,8 +1,8 @@
 import Layout from '../components/layout'
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/globals.css'
-import Head from 'next/head'
 import { useEffect } from 'react'
+import { AuthContextProvider } from '../context/AuthContext'
 
 export default function App ({ Component, pageProps }) {
   useEffect(() => {
@@ -10,8 +10,10 @@ export default function App ({ Component, pageProps }) {
   })
 
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <AuthContextProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </AuthContextProvider>
   )
 }
