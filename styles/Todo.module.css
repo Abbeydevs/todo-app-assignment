@@ -19,6 +19,11 @@
     font-family: 'Roobert', sans-serif;
 }
 
+.submit-btn {
+    background: none;
+    border: none;
+}
+
 .add-icon {
     font-size: 20px;
     color: #454545;

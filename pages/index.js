@@ -8,11 +8,8 @@ import TodoForm from '../components/todoForm'
 import TodoList from '../components/todoList'
 
 export default function Home () {
-  const [todo, setTodo] = useState()
-  const onSubmit = e => {
-    e.preventDefault()
-    setTodo('')
-  }
+  const [textInput, setTextInput] = useState('')
+  const [todos, setTodos] = useState([])
 
   return (
     <>
@@ -22,9 +19,14 @@ export default function Home () {
       </Head>
       <div className={styles.task}>
         <h1>Add Tasks</h1>
-        <TodoForm />
-        <TodoList />
-        <div className={styles.divider}></div>
+        <TodoForm
+          textInput={textInput}
+          todos={todos}
+          setTodos={setTodos}
+          setTextInput={setTextInput}
+        />
+        <TodoList todos={todos} textInput={textInput} />
+        
       </div>
     </>
   )

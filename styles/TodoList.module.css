@@ -1,29 +1,22 @@
+.todo-lists-container {
+  margin-top: 5rem;
+}
+
 .task-content {
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .task-label {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: .6rem;
-    color: #666666;
-  }
-  
-  .action-icons {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .action-icons .del-icon, .check-icon {
-    cursor: pointer;
-    font-size: 18px;
-  }
-  
-  .del-icon {
-    color: #ff0000;
-  }
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #e6e6e6;
+  margin-top: 15px;
+}
+
+.todo-li {
+  list-style: none;
+  margin-bottom: 0;
+}
