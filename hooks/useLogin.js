@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
-import { auth } from '../firebase/config'
-import { signInWithEmailAndPassword } from 'firebase/auth'
-import { useAuthContext } from '../hooks/useAuthContext'
-import { toast } from 'react-toastify'
+import { projectAuth } from '../firebase/config'
+import { useAuthContext } from './useAuthContext'
 import { useRouter } from 'next/router'
 
 export const useLogin = () => {
@@ -14,29 +12,22 @@ export const useLogin = () => {
   const router = useRouter()
 
   const login = async (email, password) => {
-
-
     setError(null)
     setIsPending(true)
 
     try {
-      const userCredentials = await signInWithEmailAndPassword(
-        auth,
-        email,
-        password
-      )
+      const res = await projectAuth.signInWithEmailAndPassword(email, password)
 
       dispatch({
         type: 'LOGIN',
-        payload: userCredentials.user
+        payload: res.user
       })
 
-      if(!isCancelled) {
+      if (!isCancelled) {
         setIsPending(false)
         toast.success('Logged in successfully!')
         router.push('/')
       }
-
     } catch (err) {
       if (!isCancelled) {
         setError(err.message)
@@ -46,17 +37,6 @@ export const useLogin = () => {
 
     return () => setIsCancelled(true)
   }
-
-  // useEffect(() => {
-  //   const unsubscribe = auth.onAuthStateChanged((user) => {
-  //     if (!user) {
-  //       // Redirect to the login page if user is not authenticated
-  //       router.replace('/login')
-  //     }
-  //   })
-  //   // Clean up the listener on unmount
-  //   return unsubscribe
-  // }, [router])
 
   return { error, login, isPending }
 }

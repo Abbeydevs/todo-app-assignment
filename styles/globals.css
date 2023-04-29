@@ -17,6 +17,10 @@ p {
     margin-bottom: 0;
 }
 
+li {
+    list-style: none;
+}
+
 a {
     color: #8d8985;
     text-decoration: none !important;

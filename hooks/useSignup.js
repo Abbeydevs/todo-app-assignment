@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
-import { auth } from '../firebase/config'
-import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth'
+import { projectAuth } from '../firebase/config'
 import { useAuthContext } from './useAuthContext'
 import { useRouter } from 'next/router'
 
@@ -18,22 +17,21 @@ export const useSignup = () => {
 
     try {
       //signup users
-      const response = await createUserWithEmailAndPassword(
-        auth,
+      const res = await projectAuth.createUserWithEmailAndPassword(
         email,
-        password,
+        password
       )
 
-      if (!response) {
+      if (!res) {
         throw new Error('Could not create user')
       }
 
       //update user display name
-      await updateProfile(response.user, { displayName })
+      await res.user.updateProfile({ displayName })
 
       dispatch({
         type: 'LOGIN',
-        payload: response.user
+        payload: res.user
       })
 
       if (!isCancelled) {
