@@ -20,3 +20,16 @@
   list-style: none;
   margin-bottom: 0;
 }
+
+.task-container input {
+  margin-top: .2rem;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.done-task {
+  text-decoration: line-through;
+  color: gray;
+}

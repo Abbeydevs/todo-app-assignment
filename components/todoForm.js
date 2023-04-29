@@ -23,6 +23,7 @@ const TodoForm = ({uid}) => {
         name='todo'
         placeholder='Add New Task'
         onChange={e => setTodo(e.target.value)}
+        required
       />
       <button
         className={styles['submit-btn']}

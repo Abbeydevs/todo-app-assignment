@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { useState } from 'react'
-// import styles from '../styles/TodoList.module.css'
 import TodoForm from '../components/todoForm'
 import { useAuthContext } from '../hooks/useAuthContext'
 import { useCollection } from '../hooks/useCollection'
